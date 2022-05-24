@@ -13,14 +13,12 @@ function BinarioADecimal(num) {
 function DecimalABinario(num) {
   // tu codigo aca
   let concatena = "";
-
   do 
   {
     concatena = (num % 2) + concatena;
   	num = Math.trunc(num/2);
     console.log(concatena);
   }while (num > 0);
-   
   return concatena;
 }
 
